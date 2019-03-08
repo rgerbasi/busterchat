@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="rodrigogerbasi.busterchat.MainActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <Button
+        android:id="@+id/darkenButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Darken"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:layout_above="@+id/imageView"
+        android:layout_alignStart="@+id/shareButton"
+        android:layout_marginStart="13dp" />
+
+    <Button
+        android:id="@+id/selectButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/picButton"
+        android:layout_alignBottom="@+id/picButton"
+        android:layout_alignStart="@+id/inverseButton"
+        android:text="Select"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="447dp" />
+
+    <Button
+        android:id="@+id/inverseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inverse"
+        tools:layout_editor_absoluteY="16dp"
+        tools:layout_editor_absoluteX="148dp"
+        android:layout_above="@+id/imageView"
+        android:layout_toEndOf="@+id/picButton"
+        android:layout_marginStart="17dp" />
+
+    <Button
+        android:id="@+id/picButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Take Picture"
+        tools:layout_editor_absoluteY="447dp"
+        tools:layout_editor_absoluteX="133dp"
+        android:layout_alignBaseline="@+id/shareButton"
+        android:layout_alignBottom="@+id/shareButton"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/brightenButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Brighten"
+        tools:layout_editor_absoluteY="16dp"
+        tools:layout_editor_absoluteX="277dp"
+        android:layout_above="@+id/imageView"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/shareButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="13dp"
+        android:layout_toEndOf="@+id/guideline"
+        android:text="Share"
+        tools:layout_editor_absoluteX="280dp"
+        tools:layout_editor_absoluteY="447dp" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline"
+        app:layout_constraintGuide_begin="20dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteY="20dp"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline2"
+        app:layout_constraintGuide_begin="20dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="20dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="224dp"
+        android:layout_height="372dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.556"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/pushButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:rotation="90"
+        android:text="Push me" />
+
+
+</RelativeLayout>
